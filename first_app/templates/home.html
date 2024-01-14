@@ -25,5 +25,15 @@
     {% for i in courses %}
     <h1>{{i.id}} {{i.name}} {{i.fee}}</h1>
     {% endfor %}
+
+    <h1>{{ joining | join:" - " }}</h1>
+    <h1>{{ birthday | date:"D d M Y" }}</h1>
+
+    <h1>{{ courses | dictsort:"fee" }}</h1>
+    
+    <h1>{{  emp | length }}</h1>
+
+    <h1>{{ 'python is the best programming language.' | truncatechars:7 }}</h1>
+    <h1>{{ 'python is the best programming language.' | truncatewords:4 }}</h1>
   </body>
 </html>
