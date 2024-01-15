@@ -14,11 +14,11 @@
 
     <!-- Conditional Statement -->
     {% if age >= 20 %}
-        <h1>You are under age</h1>
-    {% elif  age <= 19 and age >= 15 %}
-        <h3>You are not allowed</h3>
+    <h1>You are under age</h1>
+    {% elif age <= 19 and age >= 15 %}
+    <h3>You are not allowed</h3>
     {% else %}
-        <h3>You are allowed</h3>
+    <h3>You are allowed</h3>
     {% endif %}
     <!-- For Loop -->
 
@@ -30,8 +30,8 @@
     <h1>{{ birthday | date:"D d M Y" }}</h1>
 
     <h1>{{ courses | dictsort:"fee" }}</h1>
-    
-    <h1>{{  emp | length }}</h1>
+
+    <h1>{{ emp | length }}</h1>
 
     <h1>{{ 'python is the best programming language.' | truncatechars:7 }}</h1>
     <h1>{{ 'python is the best programming language.' | truncatewords:4 }}</h1>
